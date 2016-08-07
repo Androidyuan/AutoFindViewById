@@ -1,0 +1,32 @@
+<idea-plugin version="2">
+  <id>com.eddyyuan.plugin.android.AutoFindViewById</id>
+  <name>AutoFindViewById</name>
+  <version>1.0</version>
+  <vendor email="eddyyuan_qqmusic@qq.com">eddyyuan (袁聪)</vendor>
+
+  <description><![CDATA[
+      A quick way to generate findViewId codes automatically in Android.<br>
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="AutoFindViewById" class="AutoFindViewById" text="AutoFindViewById"
+            description="Auto generate FindViewById">
+      <add-to-group group-id="GenerateGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
